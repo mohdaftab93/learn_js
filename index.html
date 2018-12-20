@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2 onclick="showCoords(event)">Click on the heading to get the cordinates.</h2>
+
+    <p id="example"></p>
+
+
+
+    <script>
+        function showCoords(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            var coords = "X coords: " + x + ", Y coords: " + y;
+            document.getElementById("example").innerHTML = coords;
+        }
+    </script>
+
+</body>
+
+</html>
