@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+   
+    <div>
+        <h1>Polyrithm JS Classroom</h1>
+        <h3>JS- to find cursor x-y position on the screen</h3>
+    </div>
+    <p>
+        X cords: <span id="x-value"></span>
+        <br>
+        Y coords: <span id="y-value"></span>
+    </p>
+    <script type="text/javascript">
+        window.addEventListener("mousemove", function (e) {
+        document.getElementById('x-value').textContent= e.x;
+        document.getElementById('y-value').textContent= e.y;  
+        });
+
+    </script>
+
+</body>
+
+</html>
